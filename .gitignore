@@ -12,7 +12,7 @@ output
 .sass-cache
 ui/.css/
 .tmp
-ui/node_modules
+
 ui/app/components
 ui/dist
 ui/cacheAndroidDist
