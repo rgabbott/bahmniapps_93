@@ -394,9 +394,7 @@ var day = date.day() */
 		/** Convert to a string for display.
 			@memberof CDate
 			@return {string} This date as a string. */
-		toString: function() {
-			return (this.year() < 0 ? '-' : '') + pad(Math.abs(this.year()), 4) +
-				'-' + pad(this.month(), 2) + '-' + pad(this.day(), 2);
+		toString: function() { return (this.year() < 0 ? '-' : '') + pad(Math.abs(this.year()), 4) +'-' + pad(this.month(), 2) + pad(this.day(), 2);
 		}
 	});
 
