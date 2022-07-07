@@ -77,7 +77,7 @@ angular.module('bahmni.registration')
             var calculateAge1 = function () {
                 if (this.dob) {
                     const input = this.dob;
-                    const [mm, dd, yyyy] = input.split('-');
+                    const [dd, mm, yyyy] = input.split('/');
                     this.ethDate(dd, mm, yyyy);
                 } else {
                     this.age = age.create(null, null, null);
@@ -134,7 +134,7 @@ angular.module('bahmni.registration')
             var gmtDate = function (dd, mm, yyyy) {
                 var dob = null;
                 this.localDateConversion(dd, mm, yyyy).then(function (response) {
-                    $rootScope.dob = response.data.date + '-' + response.data.month.replaceAll(',', '') + '-' + response.data.year;
+                    $rootScope.dob = response.data.month.replaceAll(',', '') + '/' +response.data.date + '/' + response.data.year;
                     document.getElementById("popupDatepicker").value = $rootScope.dob;
                 }, function (response) {
                     return null;

@@ -11,7 +11,7 @@
 		dayNamesShort: ['እሑድ', 'ሰኞ', 'ማክሰ', 'ረቡዕ', 'ሓሙስ', 'ዓርብ', 'ቅዳሜ'],
 		dayNamesMin: ['እሑ', 'ሰኞ', 'ማክ', 'ረቡ', 'ሐሙ', 'ዓር', 'ቅዳ'],
 		digits: null,
-		dateFormat: 'mm-dd-yyyy',
+		dateFormat: 'dd/mm/yyyy',
 		firstDay: 0,
 		isRTL: false
 	};
