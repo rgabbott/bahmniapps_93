@@ -154,6 +154,11 @@ angular.module('bahmni.registration')
             };
 
             var createPatient = function (jumpAccepted) {
+                const input = $rootScope.dob;
+                const [dd, mm, yyyy] = input.split('/');
+                var dobtwo = mm+"/"+dd+"/"+yyyy;
+                $scope.patient.Ethiopian_Date =$rootScope.dob;
+                $scope.patient.Ethiopian_DOB = dobtwo;
                 return patientService.create($scope.patient, jumpAccepted).then(function (response) {
                     copyPatientProfileDataToScope(response);
                 }, function (response) {
