@@ -69,7 +69,7 @@
 				dayNamesShort: ['Ehu', 'Seg', 'Mak', 'Iro', 'Ham', 'Arb', 'Kid'],
 				dayNamesMin: ['Eh', 'Se', 'Ma', 'Ir', 'Ha', 'Ar', 'Ki'],
 				digits: null,
-				dateFormat: 'dd-mm-yyyy',
+				dateFormat: 'dd/mm/yyyy',
 				firstDay: 0,
 				isRTL: false
 			}

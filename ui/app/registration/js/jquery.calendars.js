@@ -817,7 +817,7 @@ var jsd = calendar.toJSDate(2014, 1, 26) */
 			@property {string[]} [dayNamesShort=[...]] The short names of the days of the week.
 			@property {string[]} [dayNamesMin=[...]] The minimal names of the days of the week.
 			@property {CalendarsDigits} [digits=null] Convert numbers to localised versions.
-			@property {string} [dateFormat='mm/dd/yyyy'] The date format for this calendar.
+			@property {string} [dateFormat='dd/mm/yyyy'] The date format for this calendar.
 					See the options on {@linkcode BaseCalendar.formatDate|formatDate} for details.
 			@property {number} [firstDay=0] The number of the first day of the week, starting at 0.
 			@property {boolean} [isRTL=false] <code>true</code> if this localisation reads right-to-left. */
@@ -832,7 +832,7 @@ var jsd = calendar.toJSDate(2014, 1, 26) */
 				dayNamesShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 				dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 				digits: null,
-				dateFormat: 'mm-dd-yyyy',
+				dateFormat: 'dd/mm/yyyy',
 				firstDay: 0,
 				isRTL: false
 			}

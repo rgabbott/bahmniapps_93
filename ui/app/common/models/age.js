@@ -71,7 +71,7 @@ angular.module('bahmni.common.models')
         var gmtDate = function (dd, mm, yyyy) {
             var dob = null;
             this.localDateConversion(dd, mm, yyyy).then(function (response) {
-                $rootScope.dob = response.data.date + '-' + response.data.month.replaceAll(',', '') + '-' + response.data.year;
+                $rootScope.dob = response.data.month.replaceAll(',', '') + '/' +response.data.date + '/' + response.data.year;
                 setTimeout(function () { 
                 var new_date = document.getElementById("popupDatepicker").value;
                 if (new_date != null)
