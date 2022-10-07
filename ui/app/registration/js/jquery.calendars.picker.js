@@ -435,7 +435,7 @@ $(selector).calendarsPicker({minDate: 0, maxDate: '+1m +1w'}) */
 				if no other is chosen.
 			@property {string|number|CDate} [minDate=null] The minimum selectable date.
 			@property {string|number|CDate} [maxDate=null] The maximum selectable date.
-			@property {string} [dateFormat='mm/dd/yyyy'] Format for dates.
+			@property {string} [dateFormat='dd/mm/yyyy'] Format for dates.
 			@property {boolean} [autoSize=false] <code>true</code> to size the input field according to the date format.
 			@property {boolean} [rangeSelect=false] Allows for selecting a date range on one date picker.
 			@property {string} [rangeSeparator=' - '] Text between two dates in a range.

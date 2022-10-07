@@ -56,7 +56,11 @@ angular.module('bahmni.registration')
             })();
 
             $scope.update = function () {
-                $scope.patient.Ethiopian_DOB =$rootScope.dob;
+                const input = $rootScope.dob;
+                const [dd, mm, yyyy] = input.split('/');
+                var dobtwo = mm+"/"+dd+"/"+yyyy;
+                $scope.patient.Ethiopian_Date =$rootScope.dob;
+                $scope.patient.Ethiopian_DOB = dobtwo;
                 addNewRelationships();
                 var errorMessages = Bahmni.Common.Util.ValidationUtil.validate($scope.patient, $scope.patientConfiguration.attributeTypes);
                 if (errorMessages.length > 0) {
