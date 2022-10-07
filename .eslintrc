@@ -36,7 +36,7 @@ globals:
 rules:
   angular/controller-as: off
   angular/di: [error, array]
-  indent: [error, 4]
+  //indent: [error, 4]
   quotes: off
 
   # The following are set to 'warn' level until they can be fixed
@@ -47,6 +47,7 @@ rules:
   angular/typecheck-object: warn
   angular/typecheck-function: warn
   angular/document-service: warn
+  angular/timeout-service: off
   no-redeclare: warn
   operator-linebreak: warn
   angular/controller-as-route: warn
@@ -64,4 +65,21 @@ rules:
   angular/json-functions: warn
   angular/no-service-method: warn
   angular/definedundefined: warn
+  angular/typecheck-string: off
+  angular/typecheck-number: off
+  no-new: off
+  unicode-bom: off
+  no-trailing-spaces: off
+  no-throw-literal: off
+  space-before-function-paren: off
+  dot-location: off
+  new-cap: off
+  spaced-comment: off
+  space-infix-ops : off
+  no-unexpected-multiline: off
+  curly: off
+  no-tabs: off
+  indent: off
+  no-eval: off
+  camelcase: off 
   eqeqeq: [warn, smart]
